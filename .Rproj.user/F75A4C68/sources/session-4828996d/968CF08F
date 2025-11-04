@@ -1,11 +1,11 @@
 {
     "id": "968CF08F",
-    "path": null,
-    "project_path": null,
+    "path": "~/andy-weaver/posts/2025_11_04__flint_leaded_water/index.qmd",
+    "project_path": "posts/2025_11_04__flint_leaded_water/index.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2909212618",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1762256383873.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -19,14 +19,14 @@
         "scrollLine": "0",
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "467:901"
+        "rmdVisualModeLocation": "526:901"
     },
     "folds": "",
-    "lastKnownWriteTime": 0,
-    "encoding": "",
+    "lastKnownWriteTime": 1762263842,
+    "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1762257618688,
+    "last_content_update": 1762263842314,
     "read_only": false,
     "read_only_alternatives": []
 }

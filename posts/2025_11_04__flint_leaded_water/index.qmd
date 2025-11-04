@@ -1,0 +1,35 @@
+---
+title: "Untitled"
+editor: visual
+---
+
+```{r, echo=F}
+library(tidyverse)
+library(duckplyr)
+library(magrittr)
+
+raw_tt <- tidytuesdayR::tt_load("2025-11-04")
+```
+
+```{r}
+md <- raw_tt$flint_mdeq %>% 
+  rename(adj_lead=lead2, unadj_lead=lead)
+md %>% head
+```
+
+```{r}
+vt <- raw_tt$flint_vt %>% 
+  rename(vt_lead=lead)
+
+vt %>% head
+  
+```
+
+```{r}
+library(httr)
+url <- "https://flintwaterstudy.org/wp-content/uploads/2015/12/Flint-Samples-FINAL.xlsx"
+
+file <- GET(url)
+file$content %>% content
+complete_data <- readxl::read_xlsx(vt_complete_data_url)
+```
