@@ -7,18 +7,11 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome.html",
-    "href": "posts/welcome.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "andy-weaver",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
   },
   {
     "objectID": "index.html",
@@ -26,12 +19,5 @@
     "title": "andy-weaver",
     "section": "",
     "text": "andy-weaver\n\nPosts About Me"
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "andy-weaver",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!"
   }
 ]
