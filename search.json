@@ -7,17 +7,17 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "andy-weaver",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "andy-weaver",
     "section": "",
     "text": "andy-weaver\n\nPosts About Me"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "andy-weaver",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!"
   }
 ]
