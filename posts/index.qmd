@@ -1,0 +1,5 @@
+---
+page-layout: full
+---
+
+This is the first post in a Quarto blog. Welcome!

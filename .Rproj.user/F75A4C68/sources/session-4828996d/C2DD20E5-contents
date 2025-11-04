@@ -1,0 +1,57 @@
+# Makefile for Quarto Blog Automation
+# ===================================
+# Common commands:
+#   make serve        → run quarto preview (live reload)
+#   make render       → render static site (no serve)
+#   make post TITLE="My New Post"
+#   make page NAME="about"
+#   make publish      → push and trigger GitHub Pages build
+
+SHELL := /bin/bash
+
+# Default rule
+help:
+	@echo "Quarto Blog Makefile"
+	@echo ""
+	@echo "Commands:"
+	@echo "  make serve           - start local preview server"
+	@echo "  make render          - render the full site"
+	@echo "  make post TITLE='My Post Title'   - create a new blog post"
+	@echo "  make page NAME='about'            - create a new static page"
+	@echo "  make publish         - commit, push, and trigger GitHub Pages build"
+
+# Live preview
+serve:
+	quarto preview
+
+# Render only (no server)
+render:
+	quarto render
+
+# Create a new blog post
+post:
+ifndef TITLE
+	$(error You must provide a TITLE, e.g. make post TITLE="My New Analysis")
+endif
+	@slug=$$(echo "$(TITLE)" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g'); \
+	echo "Creating post: $$slug"; \
+	quarto create-post "$${TITLE}" --slug "$$slug" --categories "blog" --date today
+
+# Create a new static page
+page:
+ifndef NAME
+	$(error You must provide a NAME, e.g. make page NAME=about)
+endif
+	@file="$(NAME).qmd"; \
+	if [ -f "$$file" ]; then \
+		echo "File $$file already exists."; \
+	else \
+		echo "---\ntitle: \"$(shell echo $(NAME) | sed 's/.*/\u&/')\"\nformat: html\n---\n" > "$$file"; \
+		echo "Created $$file"; \
+	fi
+
+# Push latest changes and trigger GitHub Action
+publish:
+	git add .
+	git commit -m "Publishing updates on $$(date '+%Y-%m-%d %H:%M')"
+	git push origin main

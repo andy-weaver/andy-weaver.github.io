@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  description: "A blog built with Quarto"
+  site-url: https://andy-weaver.github.io/
+  title: "Andy's Blog"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Posts
+        href: posts/welcome.qmd
+      - text: About
+        href: about.qmd
+      - icon: github
+        href: https://github.com/andy-weaver
+  page-navigation: true
+  
+        
+format:
+  html:
+    theme:
+      - default
+      - brand
+    css: styles.css
+    toc: false
+    code-copy: true
+    code-overflow: wrap
+    sanitize-html: false
+
+
+

@@ -1,0 +1,18 @@
+---
+page-layout: full
+---
+
+::: {.crt-screen}
+::: {.crt-inner}
+::: {.crt-brand}
+andy-weaver
+:::
+
+::: {.crt-buttons}
+[Home]{.btn-crt href="index.html"}
+[Posts]{.btn-crt href="posts/"}
+[About]{.btn-crt href="about.html"}
+[Contact]{.btn-crt href="mailto:andrewayersweaver@gmail.com"}
+:::
+:::
+:::

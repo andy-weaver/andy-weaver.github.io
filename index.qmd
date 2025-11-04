@@ -1,0 +1,11 @@
+---
+page-layout: full
+---
+
+# andy-weaver {.crt-brand}
+
+::: {.crt-buttons}
+[Posts](posts/){.btn-crt}
+[About Me](about.html){.btn-crt}
+:::
+

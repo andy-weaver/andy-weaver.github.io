@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Andy&#39;s Blog</title>
+<link>https://andy-weaver.github.io/</link>
+<atom:link href="https://andy-weaver.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>A blog built with Quarto</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Sat, 01 Nov 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Andy Weaver</dc:creator>
+  <link>https://andy-weaver.github.io/posts/welcome.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This is the first post in a Quarto blog. Welcome!</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://andy-weaver.github.io/posts/welcome.html</guid>
+  <pubDate>Sat, 01 Nov 2025 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
